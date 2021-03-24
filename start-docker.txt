@@ -1,0 +1,8 @@
+# On all operating system, you need to run database migrations and create the first user account. To do it, run.
+docker-compose up airflow-init
+# Now you can start all services:
+docker-compose up
+# Cleaning up
+# To stop and delete containers, delete volumes with database data and download images, run:
+docker-compose down --volumes --rmi all
+
